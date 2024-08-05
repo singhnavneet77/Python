@@ -28,4 +28,8 @@
 # f.write("You are learning")
 # f.close()
 
+filename = "demo.txt"  # Replace with your actual file name
 
+with open(filename) as file:
+    for i, line in enumerate(file, start=1):
+        print(f"{i}: {line.strip()}")
